@@ -1,0 +1,20 @@
+<%= simple_form_for(@blog, url: blog_path) do |f| %>
+  <% if @blog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@blog.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @blog.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+				
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+		<p><%= f.input :name %></p>
+		<p><%= f.input :meta_title %></p>
+    <%= f.submit 'Save Blog' %>
+  </div>
+<% end %>

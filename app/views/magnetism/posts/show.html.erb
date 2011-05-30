@@ -1,0 +1,13 @@
+<% set_meta_tags description: @post.description, keywords: @post.keywords %>
+
+<div class="col_12 in">
+
+<p style="float;right"><%= link_to 'Edit |', edit_post_path(@post) if admin_signed_in? %>
+<%= link_to 'Back', posts_path %></p>
+
+	<div class="col_6 in">
+		<h1><%= title @post.title %></h1>
+		<p><%= @post.body %></p>
+
+	</div>
+</div>
