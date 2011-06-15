@@ -5,6 +5,7 @@ module Magnetism
 
     def index
       redirect_to new_blog_path if Blog.first.blank?
+      @blog_name = Blog.first.name unless Blog.first.blank?
       @posts = Blog.first.posts.all unless Blog.first.blank?
     end
 

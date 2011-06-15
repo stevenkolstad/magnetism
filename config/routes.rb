@@ -6,5 +6,6 @@ Magnetism::Engine.routes.draw do
     resources :comments
   end
   
+  get 'blog' => 'posts#index'
   get 'admin/blog/posts' => 'posts#index'
 end

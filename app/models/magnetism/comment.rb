@@ -1,4 +1,4 @@
 module Magnetism
-  class Comment < ActiveRecord::Base
+  class Comment
   end
 end

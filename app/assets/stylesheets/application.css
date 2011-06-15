@@ -5,3 +5,72 @@
  *= require_self
  *= require_tree . 
 */
+
+.center {
+	margin:0 auto;
+	width:500px;
+}
+
+label{ text-align:left;font-weight:700;display:list-item;list-style:none;display:block;}
+input[type=text],input[type=text]:focus,input[type=password],input[type=password]:focus,textarea{background:#fff url() repeat-x 0 top;color:#000;font-size:24px;line-height:30px;border-top:1px solid #8f8f8f;border-right:1px solid #cecece;border-left:1px solid #cecece;border-bottom:1px solid #ddd;width:65%;margin:0;}
+input[type=submit] { text-decoration: none; padding:0 10px; cursor:pointer; border:none; background:#ff7b15; color:#fff; -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3); -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3); -webkit-border-radius:3px; -moz-border-radius:3px; margin:0 5px; font:bold 18px/2 "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; }
+input[type=submit].green{
+	background-color: #4fc92b;
+-webkit-background-clip: padding-box;
+-webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 2px;
+border-bottom-color: #49A824;
+border-bottom-left-radius: 0px 0px;
+border-bottom-right-radius: 0px 0px;
+border: 1px solid;
+border-color: #85E06C #51B927 #49A824;
+border-top-color: #85E06C;
+border-top-left-radius: 0px 0px;
+border-top-right-radius: 0px 0px;
+cursor: pointer;
+display: inline;
+font-size: 16px;
+font-weight: bold;
+height: 38px;
+line-height: 28px;
+margin: 0px;
+overflow: hidden;
+padding: 0px 0px 1px;
+padding-left: 10px;
+padding-right: 10px;
+position: absolute;
+/*right: 25px;*/
+text-align: center;
+text-decoration: none;
+text-shadow: rgba(0, 0, 0, 0.296875) 0px -1px 2px;
+text-transform: capitalize;
+/*width: 110px;*/
+z-index: 100;
+}
+
+a.orange,a:focus.orange,input[type=submit].orange{
+	background-color: #ff7b15;
+-webkit-background-clip: padding-box;
+-webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 2px;
+border-bottom-color: #49A824;
+border-bottom-left-radius: 0px 0px;
+border-bottom-right-radius: 0px 0px;
+border-top-color: #85E06C;
+border-top-left-radius: 0px 0px;
+border-top-right-radius: 0px 0px;
+cursor: pointer;
+display: inline;
+font-size: 16px;
+font-weight: bold;
+height: 38px;
+line-height: 28px;
+margin: 0px;
+overflow: hidden;
+position: relative;
+left: -2px;
+text-align: center;
+text-decoration: none;
+text-shadow: rgba(0, 0, 0, 0.296875) 0px -1px 2px;
+text-transform: capitalize;
+z-index: 100;
+	color:#fff;
+}

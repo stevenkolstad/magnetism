@@ -3,7 +3,7 @@ module Magnetism
     include Mongoid::Document
     include Mongoid::Timestamps
     include Mongoid::Paranoia
-    include Mongoid::Tracking  
+    include Mongoid::Tracking
     include Mongoid::Markdown
 
     field :title

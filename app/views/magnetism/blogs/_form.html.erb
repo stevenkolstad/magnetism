@@ -1,7 +1,7 @@
 <%= simple_form_for(@blog, url: blog_path) do |f| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@blog.errors.count, "error") %> prohibited this post from being saved:</h2>
+      <h2><%= pluralize(@blog.errors.count, "error") %> prohibited this blog from being setup properly:</h2>
 
       <ul>
       <% @blog.errors.full_messages.each do |msg| %>
@@ -15,6 +15,6 @@
   <div class="actions">
 		<p><%= f.input :name %></p>
 		<p><%= f.input :meta_title %></p>
-    <%= f.submit 'Save Blog' %>
+    <%= f.submit 'Save Blog', class: 'green' %>
   </div>
 <% end %>

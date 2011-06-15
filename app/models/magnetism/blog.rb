@@ -3,12 +3,12 @@ module Magnetism
     include Mongoid::Document
     include Mongoid::Timestamps
     include Mongoid::Paranoia
-    include Mongoid::Tracking  
-  
+    include Mongoid::Tracking
+
     field :meta_title
     field :name
     field :categories, type: Array
   
-    embeds_many :posts
+    embeds_many :posts, :class_name => "Magnetism::Post"
   end
 end
