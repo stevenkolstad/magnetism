@@ -4,6 +4,12 @@
 
 <% @posts.each do |post| %>
 
+<ul class="inline"><li><%= link_to post.title, post %></li>
+	    <% if admin_signed_in? %>			
+			<li><%= link_to 'Edit', edit_post_path(post) %></li>
+			<li><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></li><br></ul>
+				<% end %>
+	</div>
 
 </div>
 <% end %>

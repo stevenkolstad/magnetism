@@ -6,10 +6,22 @@
  *= require_tree . 
 */
 
+.container {
+  width: 1000px;
+  height:100%;
+  margin: 0em auto;
+}
+
 .center {
 	margin:0 auto;
 	width:500px;
 }
+
+.inline li {
+    display: inline;
+    float: left;
+    margin: 0 15px 0 0;
+    }
 
 label{ text-align:left;font-weight:700;display:list-item;list-style:none;display:block;}
 input[type=text],input[type=text]:focus,input[type=password],input[type=password]:focus,textarea{background:#fff url() repeat-x 0 top;color:#000;font-size:24px;line-height:30px;border-top:1px solid #8f8f8f;border-right:1px solid #cecece;border-left:1px solid #cecece;border-bottom:1px solid #ddd;width:65%;margin:0;}
